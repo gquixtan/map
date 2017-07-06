@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Map</title>
+		<!-- Site's meta description -->
+	<meta charset="UTF-8">
+	<meta name="description" content="google map">
+	<meta name="keywords" content="html, css, google map">
+	<meta name="author" content="Gabriela Quixtan">
+
+	    <!-- This links to my CSS -->  
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	 	<!-- This links to google fonts  -->
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	
+</head>
+<body>
+<div class="wrap">
+<div class="title"><h3>Google Maps Demo</h3></div>
+<div id="map"></div>
+
+<script>
+      function initMap() {
+        var uluru = {lat: 37.767741, lng:  -122.420586};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAEqpq2RTWEo3uyOAbFiX7h0VcHPflnQ&callback=initMap">
+</script>
+</div>
+
+</body>
+</html>
+
