@@ -1,3 +1,6 @@
+body {
+	background-color: #3ce9eb;
+}
  #map {
    height: 400px;
    width: 100%;
